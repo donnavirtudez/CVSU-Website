@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="x-icon" href="../pics/logo.png" />
+    <link rel="stylesheet" href="CVSU.css" />
+    <title>CAVITE STATE UNIVERSITY WEBSITE</title>
+    <script src="CVSU.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "dsAgSX-rNmCKbZfg8",
+        });
+      })();
+    </script>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <img id="logo" src="../pics/logo.png" alt="CvSU logo" />
+          <span class="university-name"
+            >CAVITE STATE UNIVERSITY BACOOR CAMPUS</span
+          >
+        </div>
+
+        <div class="hamburger" id="hamburger">&#9776;</div>
+        <ul id="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home">
+        <div class="parent-container">
+          <div class="container-home">
+            <h1>TRUTH<br />EXCELLENCE<br />SERVICE</h1>
+          </div>
+
+          <div class="container-home-1">
+            <img src="../pics/kabsuhenyos.png" alt="Kabsuhenyos" />
+          </div>
+        </div>
+
+        <div class="parent-container-1">
+          <div class="cvsu">
+            <h1>Mission</h1>
+            <p>
+              Cavite State University shall provide excellent, equitable and
+              relevant educational opportunities in the arts, sciences and
+              technology through quality instruction and responsive research and
+              development activities. It shall produce professional, skilled and
+              morally upright individuals for global competitiveness.
+            </p>
+
+            <h1>Vision</h1>
+            <p>
+              The premier university in historic Cavite globally recognized for
+              excellence in character development, academics, research,
+              innovation and sustainable community engagement.
+            </p>
+          </div>
+
+          <div class="cvsu-1">
+            <h1>Quality Policy</h1>
+            <p>
+              We Commit to the highest standards of education, value our
+              stakeholders, Strive for continual improvement of our products and
+              services, and Uphold the University’s tenets of Truth, Excellence,
+              and Service to produce globally competitive and morally upright
+              individuals.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="about">
+        <div class="parent-container-2">
+          <div class="cvsu-programs">
+            <h1>PROGRAMS</h1>
+            <p>BS Business Management</p>
+            <p>BS Computer Science</p>
+            <p>BS Criminology</p>
+            <p>BS Hospitality Management</p>
+            <p>BS Psychology</p>
+            <p>BS Information Technology</p>
+            <p>Bachelor of Secondary Education (Major in Math and English)</p>
+          </div>
+
+          <div class="csvu-orgs">
+            <h1>ORGANIZATIONS</h1>
+            <p>Central Student Government</p>
+            <p>United Faith Organization</p>
+            <p>Teatrong Padayon</p>
+            <p>Harmonic Voices Chorale</p>
+            <p>Conaces Dance Tribe</p>
+            <p>ComSelec</p>
+            <p>Teacher Education Society</p>
+            <p>Le Manager’s Societe</p>
+            <p>Societas Humana Resource</p>
+            <p>Hospitality Management Society</p>
+            <p>La Liga Psicologia</p>
+            <p>La Ciencia de Crimines Sociedad</p>
+            <p>Information Technology Society</p>
+            <p>Alliance of Computer Scientist</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="gallery">
+        <div class="gallery-container">
+          <h1>Gallery</h1>
+          <div class="pictures">
+            <img src="../pics/cvsu.jpg" alt="CvSU-Bacoor" />
+          </div>
+
+          <div class="pictures">
+            <img src="../pics/cvsu-new-bldg.jpeg" alt="CvSU-Bacoor" />
+          </div>
+
+          <div class="pictures">
+            <img src="../pics/gym.jpg" alt="CvSU-Bacoor" />
+          </div>
+
+          <div class="pictures">
+            <img src="../pics/comlab.jpg" alt="CvSU-Bacoor" />
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="location">
+          <h2>Location</h2>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3864.2615167567087!2d120.97874457510252!3d14.41208238605227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397d2258c7091cf%3A0x34f0524f8bc64a39!2sSampaguita%2C%20Bacoor%2C%20Cavite!5e0!3m2!1sen!2sph!4v1727280150114!5m2!1sen!2sph"
+            width="100%"
+            height="400"
+            style="border: 0; border-radius: 5px"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+
+        <div class="container-contact-stingray">
+          <div class="container-contact">
+            <h2>Contact</h2>
+            <form id="contact-form" onsubmit="sendMail(event)">
+              <input
+                type="text"
+                id="name"
+                class="form-control"
+                placeholder="Name"
+                required
+              />
+              <input
+                type="email"
+                id="email"
+                class="form-control"
+                placeholder="Email"
+                required
+              />
+              <textarea
+                id="message"
+                class="form-control"
+                name="message"
+                rows="5"
+                placeholder="Message"
+                required
+              ></textarea>
+              <input type="submit" onclick="sendMail()" value="Send" />
+            </form>
+          </div>
+
+          <div class="container-stingray">
+            <p class="stingrays">STINGRAYS</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2023 Cavite State University</p>
+    </footer>
+    <script src="CVSU.js"></script>
+  </body>
+</html>

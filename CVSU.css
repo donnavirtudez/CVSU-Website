@@ -1,0 +1,446 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #fcfaee;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* FOR NAV */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fefbf6;
+  padding: 10px 20px;
+  font-size: 20px;
+  position: relative;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 75px;
+  margin-right: 10px;
+}
+
+.university-name {
+  color: #347928;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+/* Navigation Links */
+#nav-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  font-weight: bold;
+}
+
+#nav-links li {
+  margin: 0 15px;
+  width: 100%;
+}
+
+#nav-links a {
+  color: #347928;
+  text-decoration: none;
+  padding: 10px 15px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#nav-links a:hover {
+  background-color: #347928;
+  color: #fcfaee;
+}
+
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  font-size: 25px;
+  cursor: pointer;
+  color: #347928;
+  margin-left: auto;
+}
+
+/* FOR MAIN */
+section {
+  color: #347928;
+  display: flex;
+  flex-direction: column;
+}
+
+/* FOR HOME */
+.parent-container {
+  display: flex;
+}
+
+.container-home,
+.container-home-1 {
+  width: 50%;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #347928;
+}
+
+.container-home {
+  color: #fcfaee;
+  text-align: center;
+}
+
+.container-home-1 img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+/* FOR HOME - M-V-QP */
+.parent-container-1,
+.parent-container-2 {
+  display: flex;
+}
+
+.cvsu,
+.cvsu-1 {
+  width: 50%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fefbf6;
+  font-size: 18px;
+  text-align: justify;
+}
+
+.cvsu-1 {
+  background-color: #fffed3;
+}
+
+.cvsu p,
+.cvsu-1 p {
+  text-align: justify;
+  width: 90%;
+}
+
+/* FOR ABOUT */
+.cvsu-programs {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #347928;
+  font-size: 15px;
+  color: #fcfaee;
+}
+
+.cvsu-programs h1,
+.cvsu-programs p {
+  text-align: left;
+  padding: 0 0 0 15px;
+  width: 90%;
+}
+
+.csvu-orgs {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #347928;
+  font-size: 15px;
+  color: #fcfaee;
+}
+
+.csvu-orgs p {
+  text-align: center;
+  width: 90%;
+}
+
+/* FOR GALLERY */
+.gallery-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-container h1 {
+  margin-bottom: 20px;
+}
+
+.pictures {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
+.pictures img {
+  max-height: 600px;
+  max-width: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+  margin: 0 10px;
+}
+
+/* FOR CONTACT */
+.location {
+  text-align: center;
+  padding: 10px;
+  background-color: #347928;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.location h2 {
+  color: #fcfaee;
+}
+
+.container-contact-stingray {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.container-contact,
+.container-stingray {
+  flex: 1 1 300px;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.container-contact {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 15px;
+  height: 440px;
+  background-color: #fffed3;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-size: 18px;
+}
+
+input[type="submit"] {
+  background-color: #347928;
+  color: #fcfaee;
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+input[type="submit"]:hover {
+  background-color: #1a5d1a;
+}
+
+.container-stingray {
+  height: 440px;
+  background-color: #fefbf6;
+}
+
+.stingrays {
+  font-weight: bold;
+  font-size: 80px;
+  text-align: center;
+  padding: 70px 0 0 0;
+}
+
+input::placeholder,
+textarea::placeholder {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
+  color: rgb(27, 26, 26);
+}
+
+/* FOR FOOTER */
+footer {
+  background-color: #347928;
+  font-size: 20px;
+  text-align: center;
+  padding: 15px 0;
+}
+
+/* FOR BEING RESPONSIVE */
+@media (max-width: 1200px) {
+  .university-name {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .university-name {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 950px) {
+  .university-name {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 900px) {
+  .university-name {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 870px) {
+  .university-name {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 860px) {
+  .university-name {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .university-name {
+    font-size: 25px;
+  }
+
+  #nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    background-color: #347928;
+    width: 30%;
+    top: 105px;
+    right: 0;
+    z-index: 1;
+  }
+
+  #nav-links a {
+    color: #fcfaee;
+  }
+
+  #nav-links.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+    margin-right: auto;
+  }
+
+  #nav-links li {
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .parent-container,
+  .parent-container-1,
+  .parent-container-2 {
+    flex-direction: column;
+  }
+
+  .container-home,
+  .container-home-1,
+  .cvsu,
+  .cvsu-1,
+  .cvsu-programs,
+  .csvu-orgs {
+    width: 100%;
+    height: auto;
+  }
+
+  .cvsu p,
+  .cvsu-1 p {
+    text-align: justify;
+  }
+
+  .cvsu-programs h1,
+  .cvsu-programs p {
+    text-align: center;
+  }
+
+  .container-contact-stingray {
+    flex-direction: column;
+  }
+
+  .container-contact,
+  .container-stingray {
+    width: 100%;
+    max-width: none;
+  }
+
+  .stingrays {
+    font-size: 35px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 684px) {
+  .university-name {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 667px) {
+  .university-name {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 540px) {
+  .university-name {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 412px) {
+  .university-name {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 375px) {
+  .university-name {
+    font-size: 15px;
+  }
+
+  .cvsu,
+  .cvsu-1 {
+    font-size: 16px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    font-size: 16px;
+  }
+
+  input[type="submit"] {
+    font-size: 16px;
+  }
+
+  .stingrays {
+    font-size: 30px;
+  }
+}
